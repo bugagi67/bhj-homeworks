@@ -1,6 +1,5 @@
 "use strict";
 
-
 const timerCount = function () {
   const timer = document.getElementById("timer");
 
@@ -10,6 +9,6 @@ const timerCount = function () {
     window.alert(`Вы победили в конкурсе!`);
     clearInterval(timeOutTimer);
   }
-}
+};
 
 let timeOutTimer = setInterval(timerCount, 1000);

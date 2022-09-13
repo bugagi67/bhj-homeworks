@@ -20,11 +20,11 @@ for (let index = 1; index <= 9; index++) {
     }
 
     if (dead.textContent === '10') {
-      alert("Вы победили!");
+      window.alert("Вы победили!");
       dead.textContent = 0;
       lost.textContent = 0;
     } else if (lost.textContent === '5') {
-      alert("Вы проиграли...");
+      window.alert("Вы проиграли...");
       dead.textContent = 0;
       lost.textContent = 0;
     }

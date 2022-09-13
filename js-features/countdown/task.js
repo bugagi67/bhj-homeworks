@@ -12,4 +12,4 @@ const timerCount = function () {
   }
 };
 
-let timeOutTimer = setInterval(timerCount, 100);
+let timeOutTimer = setInterval(timerCount, 1000);

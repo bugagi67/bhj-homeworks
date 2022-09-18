@@ -6,8 +6,10 @@ const speed = document.getElementById("clicker__speed");
 let startTime = new Date();
 
 cook.onclick = function () {
-  count.innerText++;
-  cook.width === 200 ? cook.width = 250 : cook.width = 200;
+  // count.innerText++;
+  // cook.width === 200 ? cook.width = 250 : cook.width = 200;
+
+  cook.width = ++count.textContent % 2 ? 250 : 200;
 
   let endTime = new Date();
 

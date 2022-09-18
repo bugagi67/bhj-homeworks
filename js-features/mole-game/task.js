@@ -1,7 +1,7 @@
 "use strict";
 
-let dead = document.getElementById("dead");
-let lost = document.getElementById("lost");
+const dead = document.getElementById("dead");
+const lost = document.getElementById("lost");
 
 for (let index = 1; index <= 9; index++) {
 
@@ -19,12 +19,24 @@ for (let index = 1; index <= 9; index++) {
       lost.innerHTML++;
     }
 
-    if (dead.textContent === '10') {
-      window.alert("Вы победили!");
-      dead.textContent = 0;
-      lost.textContent = 0;
-    } else if (lost.textContent === '5') {
-      window.alert("Вы проиграли...");
+    // if (dead.textContent === '10') {
+    //   window.alert("Вы победили!");
+    //   dead.textContent = 0;
+    //   lost.textContent = 0;
+    // } else if (lost.textContent === '5') {
+    //   window.alert("Вы проиграли...");
+    //   dead.textContent = 0;
+    //   lost.textContent = 0;
+    // }
+
+    if (dead.textContent === "10") {
+      messagesWin("Вы победили!");
+    } else if (lost.textContent === "5") {
+      messagesWin("Вы проиграли...")
+    }
+
+    function messagesWin(message) {
+      window.alert(message);
       dead.textContent = 0;
       lost.textContent = 0;
     }

@@ -23,7 +23,5 @@ add.addEventListener("click", (event) => {
     let remove = document.querySelector(".task__remove");
 
     remove.addEventListener("click", () => task.remove());
-
-    localStorage.setItem("list", 'list');
   }
 });
